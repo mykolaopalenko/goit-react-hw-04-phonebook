@@ -1,5 +1,6 @@
-@import-normalize; /* bring in normalize.css styles */
+import { createGlobalStyle } from 'styled-components';
 
+export const GlobalStyles = createGlobalStyle`
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -7,7 +8,6 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  padding: 20px;
 }
 
 code {
@@ -15,24 +15,28 @@ code {
     monospace;
 }
 
-p,
 h1,
 h2,
 h3,
 h4,
 h5,
-h6 {
-	margin: 0;
+h6,
+p {
+  margin: 0;
 }
 
 ul {
-	margin: 0;
-	padding-left: 0;
-	list-style: none;
+  margin: 0;
+  padding-left: 0;
 }
+
 img {
-	display: block;
-	/* max-width: 100%; */
-	/* height: auto; */
-	/* width: 100%; */
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
+
+a {
+  text-decoration: none;
+}
+`;
