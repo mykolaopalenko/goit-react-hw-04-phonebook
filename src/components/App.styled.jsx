@@ -1,4 +1,15 @@
-import styled from 'styled-components';
+import styled from '@emotion/styled';
+
+export const PhoneTitle = styled.h1`
+  font-size: 36px;
+  font-weight: 500;
+  margin-top: 30px;
+`;
+
+export const Message = styled.p`
+  margin-top: 10px;
+  font-size: 30px;
+`;
 
 export const Wrapper = styled.div`
   display: flex;
@@ -17,7 +28,3 @@ export const TitleContacts = styled.h2`
   font-size: 32px;
 `;
 
-export const Message = styled.p`
-  margin-top: 10px;
-  font-size: 30px;
-`;

@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Avatar from 'react-avatar';
-import { ContactName, ContactStyle, DeleteBtn } from './ContactList.styled';
+import { ContactName, ContactStyle, DeleteBtn } from '../ContactItem/ContactItem.styled';
 
 const ContactItem = ({ name, number, onDelete }) => {
   return (
@@ -20,7 +20,7 @@ const ContactItem = ({ name, number, onDelete }) => {
 };
 
 ContactItem.propTypes = {
-  deleteContact: PropTypes.func.isRequired,
+  deleteContact: PropTypes.func,
   number: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
   id: PropTypes.string.isRequired,

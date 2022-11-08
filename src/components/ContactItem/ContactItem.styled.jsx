@@ -1,17 +1,5 @@
 import styled from '@emotion/styled';
 
-export const PhoneTitle = styled.h1`
-  font-size: 36px;
-  font-weight: 500;
-  margin-top: 30px;
-`;
-
-export const Item = styled.li`
-  display: flex;
-  max-width: 350px;
-  justify-content: space-between;
-  margin-top: 15px;
-`;
 
 export const ContactName = styled.div`
   display: flex;
@@ -35,4 +23,3 @@ export const DeleteBtn = styled.button`
     background-color: gray;
   }
 `;
-
